@@ -1,0 +1,24 @@
+.contact-list-container {
+    padding: 20px;
+    background-color: #e6f7ff; /* lighter blue */
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.contact-list-container h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.no-contacts {
+    text-align: center;
+    color: #555;
+    font-style: italic;
+}

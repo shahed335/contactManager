@@ -1,11 +1,11 @@
 
-import './CSS/ConatctMangerForm';
+import './CSS/ContactManagerForm.css';
 
 import { useState } from "react";
 import React from 'react';
 
 
-function ConatctMangerForm(props){
+function ContactManagerForm(props){
 
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
@@ -14,13 +14,13 @@ function ConatctMangerForm(props){
 
     const addManagerSubmit = (e) => {
 
-        const newManger = {
+        const newManager = {
             username,
             email
         };
 
         //setContactManger([...ConatctMangerForm, newManager]);
-        props.addManager(newManger);
+        props.addManager(newManager);
         
         setUsername("");
         setEmail("");
@@ -32,7 +32,7 @@ function ConatctMangerForm(props){
     return (
 
         <div>
-            <h2>Contact Manger App</h2>
+            <h2>Contact Manager App</h2>
 
             <form onSubmit={addManagerSubmit}>
                 <input 
@@ -46,7 +46,7 @@ function ConatctMangerForm(props){
                     type = "text"
                     placeholder='Email'
                     value={email}
-                    onChange={(e) => setemaill(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
 
 
@@ -58,4 +58,4 @@ function ConatctMangerForm(props){
     );
 }
 
-export default ConatctMangerForm;
+export default ContactManagerForm;

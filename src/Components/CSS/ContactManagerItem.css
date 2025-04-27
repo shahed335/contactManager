@@ -1,0 +1,13 @@
+.contact-item {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    color: #007BFF;
+    transition: background-color 0.3s;
+}
+
+.contact-item:hover {
+    background-color: #cce5ff;
+}
